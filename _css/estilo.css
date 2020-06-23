@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
+
+@font-face {
+	font-family: 'FonteLogo';
+	src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+body {
+	/*background-image: url("8df841aabda4d5360fc0873f4e462df5.jpg");
+	background-color: blue;*/
+	color: rgba(0,0,0,1);
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+}
+
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+div#interface {
+	width:950px;
+	background-color: #ffffff;
+	margin: -10px auto 10px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	padding: 10px 10px 10px 20px;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 850px;
+	top: 50px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;/*Borda inferior somente*/
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #888888;
+	padding: 0px;
+	margin-top: 4px;
+}
+
+
+
+p {
+	text-align: justify;
+	text-indent: 20px;
+	
+}
+
+/*Formatação de imagens com legenda*/
+
+figure.foto-com-legenda {
+	border: 3px solid white;
+	box-shadow: 1px 1px 9px black;
+	position: relative;
+}
+
+figure.foto-com-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-com-legenda figcaption {
+	opacity:0;
+	position: absolute;
+	top: 0px;
+	text-align: left;
+	color: white;
+	padding: 15px;
+	font-size: 15px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.5s;
+}
+
+figure.foto-com-legenda:hover figcaption {
+	opacity: 1;
+}
+
+
+
+
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul { /*Sempre que a identificação for ID, use o #*/
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -17px;
+	left: 540px;
+}
+
+
+nav#menu li{
+	display: inline-block; /*Alinha todos os itens list na mesma linha*/
+	background-color: rgba(0,0,0,0.125);
+	padding: 10px;
+	margin: 0px;
+	transition: background-color 0.3s;
+}
+
+nav#menu li:hover {
+	background-color: rgba(0,0,0,0.35);
+}
+
+nav#menu a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: white;
+}
+
+
+nav#menu h1{
+	display: none;
+}
+
+
+
+table#especificacoes {
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#especificacoes td {
+	border: 1px solid rgba(0,0,0,0.35);
+	padding: 10px;
+}
+
+
+
+table#especificacoes td.atributo {
+	text-align: right;
+	vertical-align: top;
+	padding-left: 40px;
+	background-color: #606060;
+	font-weight: bold;
+	color: white;
+}
+
+table#especificacoes td.informacao {
+	text-align: left;
+	padding-right: 40px;
+}
+
+
+table#especificacoes caption {
+	font-size: 20px;
+	color: #606060;
+	font-weight: bold;
+	text-align: left;
+}
+
+table#especificacoes caption span#data-tabela {
+	display: block;
+	float: right;
+	font-size: 10px;
+	color: rgb(0,0,0);
+	margin-top: 10px;
+}
+
+section#corpo {
+	display: block;
+	width: 550px;
+	float: left;
+	border-right: 1px #606060 solid;
+	padding-right: 15px;
+}
+
+
+aside#lateral {
+	display: block;
+	width: 320px;
+	float: right;
+	background-color: rgba(0,0,0,0.2);
+	padding: 10px;
+	margin: 15px;
+	box-shadow: 0px 0px 3px black;
+}
+
+aside#lateral h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #606060;
+	margin-top: 5px;
+	font-size: 30px;
+}
+
+
+aside#lateral h3 {
+	background-color: rgba(0,0,0,0.4);
+	padding: 10px 0px 10px 10px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: light;
+}
+
+
+
+
+
+footer#rodape {
+	clear: both;
+	font-family: 'Open Sans Condensed', sans-serif;
+	border-top: 1px #606060 solid;	
+}
+
+footer#rodape h3 {
+	text-align: right;
+	text-decoration: none;
+}
+
+
+article#noticia-principal h1{
+	font-size: 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 0px;
+}
+
+article#noticia-principal h3#categoria {
+	font-family: 'Gotu', sans-serif;
+	font-size: 12px;
+	color: #606060;
+}
+
+
+article#noticia-principal h3#creditos {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	color: rgba(0,0,0,0.4);
+	margin-top: 0px;
+}
+
+
+
+article#noticia-principal h5 {
+	text-align: right;
+	color: rgba(0,0,0,0.6);
+}
+
+
+article#noticia-principal h2 {
+	font-size: 16px;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+
+
+video#video02 {
+	width: 300px;
+}
+
+video#video01 {
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+

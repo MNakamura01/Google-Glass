@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+<title>Google Glass - Novas tecnologias</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/form.css"/>
+			<script language="javascript" src="_javascript/funcoes.js"></script>
+
+</head>
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup>
+
+	<img id="icone" src="_imagens/contato.png"/>
+
+<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul>
+		<li onmousemove="mudaIcone('_imagens/home.png')" onmouseout="mudaIcone('_imagens/contato.png')"><a href="index.html">Home</a></li>
+		<li onmousemove="mudaIcone('_imagens/especificacoes.png')" onmouseout="mudaIcone('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+		<li onmousemove="mudaIcone('_imagens/fotos.png')" onmouseout="mudaIcone('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmousemove="mudaIcone('_imagens/multimidia.png')" onmouseout="mudaIcone('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmousemove="mudaIcone('_imagens/contato.png')" onmouseout="mudaIcone('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+	</ul>
+</nav>
+
+
+	</header>
+	
+	
+		
+<section id="corpoFull">
+<article id="noticia-principal">
+<hgroup>
+<h3 id="categoria">Fale Conosco&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp; Contato</h3>
+<h1>Formulário de Contato</h1>
+<h3 id="creditos">Adaptado por Márcio Nakamura</h3>
+<h5>Atualizado em 22/Março/2020</h5>
+</hgroup>
+
+
+<form method="post" id="fContato" action="mailto:mrnnakamura01@gmail.com" oninput="calcTotal();">
+	<fieldset id="usuario">
+		<legend>Identificação do Usuário</legend>
+			<p> <label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder=" Nome Completo"/></p>
+			<p> <label for="cSenha">Senha: </label><input type="password" name="tSenha" id="cSenha" size="8" maxlength= "8" placeholder=" 8 dígitos"/></p>
+			<p> <label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" placeholder=" Insira um e-mail válido"/></p>
+			<fieldset id="sexo"><legend>Sexo</legend>
+				<input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label></br>
+				<input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+			</fieldset>
+			<p>Data de Nascimento: <input type="date" name="tData" id="cData"></p>
+	</fieldset>
+
+	<fieldset id="endereco">
+		<legend>Endereço do Usuário</legend>
+			<p>Logradouro: <input type="text" name="tLog" id="cLog" placeholder="Rua, Avenida, Travessa..."/></p>
+			<p>Número: <input type="number" name="tNum" id="cNum" min="0" max="999999"/></p>
+			<p>Estado: <select name=""tEst" id="cEst">
+				<option value="MG">ES</option>
+				<option>MG</option>
+				<option>RJ</option>
+				<option selected>SP</option>
+			</select></p>
+			<p>Cidade: <input type="text" name="tCid" id="cCid"/></p>
+			
+	</fieldset>
+
+	<fieldset id="mensagem">
+		<legend>Mensagem do Usuário</legend>
+			<p>Grau de Urgência: &nbsp&nbsp&nbsp Min <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1" /> Máx</p>
+			<p>Mensagem: <textarea name="tMsg" id="cMsg" cols="45" rows="3" placeholder=" Deixe aqui sua mensagem:"></textarea></p>
+	</fieldset>
+
+	<fieldset id="pedido">
+		<legend>Quero um Google Glass</legend>
+			<p><input type="checkbox" name="tGost" id="cGost" checked><label for="cGost">Gostaria de adquirir um Google Glass quando disponível</label></p>
+			<p>Cor: <input type="color" name="tColor" id="cColor" value="#ffffff"/></p>
+			<p>Quantidade: <input type="number" name="tQntd" id="cQntd" min="0" max="10" value="0"/></p>
+			<p>Preço Total: R$ <input type="text" name="tPreco" id="cPreco" placeholder=" Valor total: " readonly/></p>
+	</fieldset>
+
+	
+	<input type="image" src="_imagens/botao-enviar.png"/>
+
+</form>
+
+
+<footer id="rodape">
+<h3>Copyright 2020 | by Márcio Nakamura</h3>
+<h3><a href="https://www.facebook.com/marcio.nakamura.395" target="_blank">Facebook</a> | <a href="https://twitter.com/MrcioNakamura1" target="_blank">Twitter</a></h3>
+</footer>
+
+</div>
+</body>
+</html>
